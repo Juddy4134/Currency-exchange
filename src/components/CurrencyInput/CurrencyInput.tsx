@@ -44,6 +44,7 @@ const CurrencyInput = (props:ICurrencyInput) => {
                 <input type="number"
                        value={props.inputValue}
                        onChange={handleInputChange}
+                       min={0}
                 />
                 <select value={props.selectValue} onChange={handleSelectChange}>
                     {props.currencies.map((currency => (

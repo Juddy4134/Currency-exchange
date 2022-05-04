@@ -15,8 +15,7 @@ const CurrencyInput = (props:ICurrencyInput) => {
             props.setAnotherInputValue(count)
         } else {
             //@ts-ignore
-            const currentCurrency: number = props.rates[currentCurrency];
-            const toGRN: number = value * currentCurrency
+            const toGRN: number = value * props.rates[currentCurrency]
             //@ts-ignore
             const count: number = toGRN / props.rates[requiredRate]
             props.setAnotherInputValue(count)

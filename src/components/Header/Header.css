@@ -1,0 +1,13 @@
+h1{
+    color: #eef;
+    text-align: center;
+}
+
+.currencies{
+    color: #eef;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-weight: bold;
+}
